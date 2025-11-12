@@ -84,7 +84,7 @@ const Header = () => {
 
         {/* Mobile menu (with animation) */}
           <button onClick={() => setMenuOpen(!menuOpen)} className="sm:block md:block lg:hidden xl:hidden 2xl:hidden"  >    {menuOpen ? <X /> : <Menu />} </button>
-        <div className={` top-10 left-0 w-full bg-white border-t border-b border-gray-500 flex flex-col items-start gap-3 px-4 py-3 lg:hidden z-40 transition-all duration-300 ease-in-out fixed ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}`} >
+        <div className={` top-16 left-0 w-full bg-white border-t border-b border-gray-500 flex flex-col items-start gap-3 px-4 py-3 lg:hidden z-40 transition-all duration-300 ease-in-out fixed ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}`} >
           <Link to="/" onClick={() => setMenuOpen(false)}> Home</Link>
           <Link to="/the_brand" onClick={() => setMenuOpen(false)}>  The brand</Link>
           <Link to="/" onClick={() => setMenuOpen(false)}>  All Products</Link>
